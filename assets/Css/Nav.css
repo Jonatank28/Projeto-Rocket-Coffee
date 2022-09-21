@@ -1,0 +1,79 @@
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 62px;
+}
+.menu ul{
+  display: flex;
+  align-items: center; 
+  gap: 32px;
+}
+.menu ul li a{
+  color: var(--text-color);
+  font-size: 0.879rem;
+  padding: 0.2rem 0.3rem;
+}
+.pegarMeuCafe button{
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 0.691rem;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: 2px solid var(--button);
+  border-radius: 6.03px;
+}
+.logoMobile{
+  display: none;
+}
+.hamburguerAberto{
+  display: none;
+}
+
+@media (max-width: 500px){
+  .menu ul{
+    display: none;
+  }
+  .logoDesktop{
+    display: none;
+  }
+  .logoMobile{
+    display: block;
+    padding-left: 10px;
+  }
+  .pegarMeuCafe button{
+    display: none;
+  }
+  .hamburguerAberto{
+    display: block;
+    padding-right: 10px;
+  }
+  .nav{
+    padding-top: 25px;
+  }
+  .ativo.menu ul{
+    background-color: var(--backgrond);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 70px;
+    width: 50%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+    gap: 0px;
+  }
+  .ativo.menu ul li{
+    width: 100%;
+    border-top: 2px solid var(--border);
+    padding-top: 30px;
+    padding-left: 35px;
+  }
+  .ativo.menu ul li a {
+    font-size: 1.5rem;
+  }
+  .borda{
+    border-left: 4px solid var(--button);
+  }
+}

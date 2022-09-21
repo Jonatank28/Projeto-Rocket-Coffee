@@ -1,0 +1,58 @@
+.main{
+  padding-top: 80px;
+  text-align: center;
+}
+.main .h11{
+  color: var(--text-color);
+  font-size:5.022rem;
+}
+.main .h12{
+  font-size:5.022rem;
+  text-shadow: 
+    -1px -1px 0px var(--button), 
+    -1px 1px 0px var(--button),                   
+    1px -1px 0px var(--button),                 
+    1px 0px 0px var(--button);
+}
+.h12::before{
+  content: "<";
+}
+.main img{
+  max-width: 100%;
+}
+.mainP{
+  color: var(--text-color);
+  font-size:1.70rem;
+  display:none;
+}
+.pegar2 button{
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 12px 25px;
+  border: 2px solid var(--button);
+  border-radius: 6.03px;
+}
+.pegar2 button:after{
+  content: "  >";
+  top: 0px;
+}
+@media (max-width: 500px){
+  .pegar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  display: block;
+  }
+  .main .h11,
+  .main .h12{
+    font-size:4.022rem;
+  }
+  .mainP{
+    display: block;
+  }
+}
+
+
